@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-03T18:52:56.239Z",
+    "end": "2024-02-03T18:53:01.452Z",
+    "duration": 5213,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1e2e482-2b9b-4b0a-863e-1588837e37b8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertionDemo.cy.js",
+      "file": "cypress\\e2e\\assertionDemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2a213116-dfff-4a51-87d2-2fe1d1da53f7",
+          "title": "Assertions Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testing Assertions",
+              "fullTitle": "Assertions Demo Testing Assertions",
+              "timedOut": null,
+              "duration": 2118,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\assertionDemo.cy.js\\\\Assertions Demo -- Testing Assertions (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('get').click();\ncy.get('#query-btn').should('contain', 'Button').and('have.class', 'query-btn');\ncy.get('#inputName').type('Davinder').should('contain.value', 'Davinder');\ncy.get('#inputEmail').type('31davinderpal@gmail.com').should('have.value', '31davinderpal@gmail.com');\nexpect(true).to.be.true;\nassert.equal(4, '4', 'Not Equal');\nassert.strictEqual(4, '4', 'Not Equal');",
+              "err": {
+                "message": "AssertionError: Not Equal: expected 4 to equal '4'",
+                "estack": "AssertionError: Not Equal: expected 4 to equal '4'\n    at Context.eval (webpack://cypress_project1/./cypress/e2e/assertionDemo.cy.js:23:15)",
+                "diff": "- 4\n+ '4'\n"
+              },
+              "uuid": "804cee1c-dcbf-48a4-803e-2a799a7f81f3",
+              "parentUUID": "2a213116-dfff-4a51-87d2-2fe1d1da53f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "804cee1c-dcbf-48a4-803e-2a799a7f81f3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2118,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
