@@ -2,6 +2,10 @@ import {LoginPage} from "../Pages/login_page";
 
 const loginPage = new LoginPage()
 
+beforeEach(()=> {
+    cy.visit(Cypress.env("url"));
+})
+
 describe('Login Tests', ()=> {
 
     it.skip('Login Test 1', ()=> {
