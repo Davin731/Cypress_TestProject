@@ -11,5 +11,5 @@ it('ReadWrite Test', ()=> {
         cy.log(data.email)
     })
 
-    cy.log(this.test_data.name)
+    //cy.log(this.test_data.name)
 })

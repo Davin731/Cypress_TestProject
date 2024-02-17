@@ -3,7 +3,7 @@
 describe("Assertions Demo", ()=>{
 
     it("Testing Assertions", ()=> {
-        cy.visit(Cypress.env("url"));
+        cy.visit(Cypress.env("url2"));
 
         cy.contains('get').click();
 
