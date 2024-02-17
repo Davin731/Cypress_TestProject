@@ -47,8 +47,8 @@ describe('My Web Application Testing', () => {
 
         cy.get('[type="submit"]').click();
 
-        cy.wait(5000);
-        
+        cy.wait(6000);
+
         cy.contains('Davin Singh').should('exist');
     })
 
