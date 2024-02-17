@@ -1,13 +1,17 @@
 {
   "name": "cypress_project1",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Practice Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "echo I am PreTest",
+    "posttest": "echo I am PostTest",
+    "test": "echo I am the test",
+    "hello": "echo Hello World",
+    "cy-test": "cypress run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Davinderpal Singh",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.3"

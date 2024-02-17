@@ -3,7 +3,7 @@
 describe("Assertions Demo", ()=>{
 
     it("Testing Assertions", ()=> {
-        cy.visit('https://example.cypress.io');
+        cy.visit(Cypress.env("url"));
 
         cy.contains('get').click();
 
@@ -15,6 +15,8 @@ describe("Assertions Demo", ()=>{
 
         cy.get('#inputEmail').type('31davinderpal@gmail.com')
                              .should('have.value', '31davinderpal@gmail.com');
+        
+        cy.screenshot("MyScreenshot", {capture: "fullPage"});
 
         expect(true).to.be.true;
 

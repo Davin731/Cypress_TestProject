@@ -31,11 +31,12 @@ it('Login Test 3', ()=> {
     loginPage.enterUsername(Cypress.env('username'));
     loginPage.enterPassword(Cypress.env('password'));
     loginPage.clickLogin();
-    //cy.get('.oxd-userdropdown-tab').click();
+    // cy.get('.oxd-userdropdown-tab').click();
+    cy.wait(5000);
     cy.contains('Admin').click();
     cy.wait(5000);
     cy.screenshot("Full Page Screenshot", {capture: "fullPage"});
-    //cy.go('back');
+    // cy.go('back');
     cy.go(-1);
 })
 
@@ -45,7 +46,8 @@ it('Login Test 4', ()=> {
     loginPage.enterPassword(Cypress.env('password'));
     loginPage.clickLogin();
     //cy.get('.oxd-userdropdown-tab').click();
-    cy.contains('Admin').screenshot().click();
+    cy.wait(5000);
+    cy.contains('Admin').click();
     cy.wait(5000);
     cy.screenshot("Runner Screenshot", {capture: "runner"});
     //cy.go('back');
@@ -58,6 +60,7 @@ it('Login Test 5', ()=> {
     loginPage.enterPassword(Cypress.env('password'));
     loginPage.clickLogin();
     //cy.get('.oxd-userdropdown-tab').click();
+    cy.wait(5000);
     cy.contains('Admin').click();
     cy.wait(5000);
     cy.screenshot("ViewPort Screenshot", {capture: "viewport"});
